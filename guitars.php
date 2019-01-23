@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css">
 
 	<title>Guitars</title>
 </head>
@@ -9,7 +11,7 @@
 
 	<?php
 		include "db_connection.php";  
-		//call other id's
+		
     $g_id = $_GET['Guitar_ID'];
 		      
 
@@ -29,25 +31,21 @@
             '</div>';
        
     }     
-   echo "<link rel='stylesheet' type='text/css' href='style.css' />";
+   
 	?>
+
+
 	
- <!-- <div class="card">
+ <!--<div class="card">
  	<h1>Ibanez grx70</h1>
   <img src="images/ibanez-grx70.jpg" alt="" style="width:30%">
   <p class="price"><h4>€300</h4></p>
   <p>Some text about the..</p>
   <p><button type="submit" value="submit">Add to Cart</button></p>
-</div>  -->
+</div>
 
 
-<!--<div class="card">
-  <img src="images/ibanez-grx70.jpg" alt="" style="width:30%">
-  <h1>Ibanez-grx70</h1>
-  <p class="price">€300</p>
-  <p>Some text about the..</p>
-  <p><button>Add to Cart</button></p>
-</div> 
+
 
 <div class="card">
   <img src="images/ibanez-gsa60.jpg" alt="" style="width:30%">
@@ -57,22 +55,31 @@
   <p><button>Add to Cart</button></p>
 </div> 
 
+<div class="guitar">
+  <img src="images/jack-danny.jpg" alt="" style="width: 30%;">
+  <h1>Jack & Danny</h1>
+  <p class="price">€350</p>
+  <p>Some text about the..</p>
+  <p><button>Add to Cart</button></p>
+  </div>
+</div>
+
 <div class="card">
   <img src="images/epiphone-afd.jpg" alt="" style="width:30%">
   <h1>Epiphone-afd</h1>
   <p class="price">€350</p>
   <p>Some text about the..</p>
   <p><button>Add to Cart</button></p>
+</div>
+
+<!--<div class="card">
+  <img src="images/ibanez-grx70.jpg" alt="" style="width:30%">
+  <h1>Ibanez-grx70</h1>
+  <p class="price">€300</p>
+  <p>Some text about the..</p>
+  <p><button>Add to Cart</button></p>
 </div>-->
 
-
-
-	<!--<div class="guitar">
-  <img src="images/jack-danny.jpg" alt="" style="width: 30%;">
-  <div class="container">
-    <h4><b>Jack & Danny L Rock BK</b></h4> 
-    <p></p> 
-  </div>
-</div>-->
+	
 </body>
 </html>

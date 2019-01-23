@@ -1,21 +1,19 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, 
+	initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<title>Guitar Information</title>
 </head>
 <body>
-    
 
 
-<?php
-
-    //Card.PHP
-
-    include "db_connection.php";        
+	<div class="gui_info">
+	<?php
+	//Guitar_info.php
+include "db_connection.php";        
 
     $sql_querie = "SELECT Guitar_ID, Guitar_Articlenumber, Guitar_Brand, Guitar_Model, Guitar_Price, Guitar_Img FROM guitars";
     
@@ -32,21 +30,16 @@
              '</a>' .
              '<h2 class="price">' .'€'. $row['Guitar_Price'] .',-'.'</h2>'.
              '<h1>' . $row['Guitar_Brand']  . ' ' . $row['Guitar_Model'] .'</h1>' .
-             '<a href="guitar_info.php?id=' . $row['Guitar_ID'] . '">' .
-             '<p>' . '<button class="btn">'.  'More information'   . '</P>' . '</a>'.
+             '<p class="p_btn>' . '<button class="btn">'. 'More information' . '</P>' .
             
                
-            '</div>';
+           '</div>';
        
     }       
- //voornaam + achternaam 
-            // '<h1>' . $row['Guitar_Brand']  . ' ' . $row['Guitar_Model'] .'</h1>' .
-             // title 
-             //'<p class="title">' . $row['Guitar_Articlenumber'] . '</p>' .           
-             //'<p>GuitarStore</p>' .
-    $conn = null;
-  
-?>
 
+
+	?>
+
+	</div>
 </body>
 </html>
