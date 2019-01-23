@@ -8,8 +8,10 @@ div.flex{
 	height: 200vh;
 	display: flex;
 	flex-direction: column;
+}
 
-	
+div.wrapper{
+	border: 2px solid black;
 }
 
 div.header{
@@ -22,13 +24,12 @@ color: white;
 
 div.nav{
 
-
-	text-align:center;
-	justify-content: space-around;
-	font-family: Trebuchet MS;
-	font-size: 25px;
-	background-color: #333;
-	color:white;
+text-align:center;
+justify-content: space-around;
+font-family: Trebuchet MS;
+font-size: 25px;
+background-color: #333;
+color:white;
 }
 
 
@@ -39,15 +40,13 @@ flex: 1;
 justify-content: center;
 align-items: center;
 flex-wrap: wrap;
-
-background-color: ; 
-
+background-color: ;
 
 }
 
 div.card {
-  /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 900px;*/
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+ /* max-width: 900px;*/
   height: 
   margin: auto;
   font-size: 10px;
@@ -70,15 +69,20 @@ font-family: Trebuchet MS;
 text-align:center;
 }
 
+div.card2.debug{
+
+	
+}
+
+div.card2 p{
+
+	font-family: Arial;
+}
+
 div.header h1{
 font-family: Brush script MT;
 font-size: 35px;
 color:;
-}
-
-div.header h1:hover{
-
-
 }
 
 
@@ -120,11 +124,6 @@ ul li.last:after {
     content:"";
 }
 
-label{
-
-	
-}
-
 .search{
 
 justify-content: flex-end;
@@ -138,14 +137,18 @@ justify-content: flex-end;
   
 }
 
-.p_btn{
-	text-align: center;
-  color: black;
+.btn2{
+
+
 }
+
+
 
 .price{
 	font-size: 20px;
+	color:white;
 }
+
 
 
 
