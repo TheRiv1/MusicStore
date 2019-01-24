@@ -14,14 +14,16 @@ div.wrapper{
 	border: 2px solid black;
 }
 
+/* Header*/
 div.header{
 background-image: url(images/background.jpg);
 background-image: cover;
+background-image: linear-gradient();
 color: white;
 }
 
 
-
+/* Navigatie*/
 div.nav{
 
 text-align:center;
@@ -33,7 +35,7 @@ color:white;
 }
 
 
-
+/* in card.php*/
 div.cards{
 display: flex;
 flex: 1;
@@ -43,6 +45,8 @@ flex-wrap: wrap;
 background-color: ;
 
 }
+
+/* picture + text */
 
 div.card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -57,6 +61,7 @@ div.card {
 
 }
 
+/* image model*/
 .card img{
 	width: 100%;
 	height: 300px;
@@ -64,21 +69,29 @@ div.card {
   border-radius: 50px 20px;
 }
 
+/* adjust text */
 div.card h1{
 font-family: Trebuchet MS;
 text-align:center;
 }
 
-div.card2.debug{
-
-	
+/* one picture only  */
+div.card_single.debug{
+border: 2px solid red;
 }
 
-div.card2 p{
+/*   create flex*/
+div.card_single{
+	display: flex;
+	flex-direction: row;
+}
 
+/*  adjust text*/
+div.card_single p{
 	font-family: Arial;
 }
 
+/* adjust text in header*/
 div.header h1{
 font-family: Brush script MT;
 font-size: 35px;
@@ -86,14 +99,14 @@ color:;
 }
 
 
-
+/*  decorate nav */
 a{
 	text-decoration: none;
 	font-family: Trebuchet MS;
 	font-size: 20px;
 }
 
-
+/* remove dots nav*/
 ul li {
 	list-style-type: none;
 	display: inline-block;
@@ -102,6 +115,7 @@ ul li {
 
 }
 
+/* box ul in nav */
 ul{
 	margin:0;
 	padding:0;
@@ -110,46 +124,68 @@ ul{
 
 }
 
+/* change color text in nav*/
 ul li a{
 	color: white;
 
 }
 
+/*  will add "/"" to links in nav*/
 ul li:after {
     content: "/";
 }
 
-
+/*  will add "/"" to links in nav*/
 ul li.last:after {
     content:"";
 }
 
-.search{
 
-justify-content: flex-end;
+/* border on button */
+.cart_btn{
 
+border-radius: 20px black;
+justify-content: center;
+margin-top: 200px;
+width: 200px;
+height: 50px;
 }
 
-.btn{
-	background-color: white;
-  color: black;
-  border-radius: 20px 20px;
-  
-}
-
-.btn2{
-
-
-}
-
-
-
+/* in guitars.php*/
 .price{
 	font-size: 20px;
-	color:white;
+	color:black;
+	text-align: center;
 }
 
 
+/* column with picture */
+div.left{
+border: 1px solid red;
+width: 50%;
+height: 200vh;
+
+}
+
+/* column with text */
+div.right{
+border: 1px solid red;
+height: 200vh;
+background-color: lightgrey;
+}
+
+div.right p{
+
+	font-family: Arial;
+	font-size: 20px;
+	text-align: center;
+
+}
+
+div.left h1{
+text-align: center;
+
+}
 
 
 
