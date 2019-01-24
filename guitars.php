@@ -2,6 +2,8 @@
 include 'header.php';
 ?>
 
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,6 +35,7 @@ include 'header.php';
     {            
         
         echo '<div class="card_single debug">' .
+        						//div left column
 		        			'<div class="left debug">' .
 		        				//Brand + Model
 		             		'<h1>' . $row['Guitar_Brand']  . ' ' . $row['Guitar_Model'] .'</h1>' . 
@@ -41,9 +44,9 @@ include 'header.php';
 		             		'<h2 class="prices">' .'€'. $row['Guitar_Price'] .',-'.'</h2>'.  
 
 		             		//Img 
-		             		'<img src="' . $row['Guitar_Img'] . '" alt="'  . '" style="width:100%">' .
+		             		'<img src="' . $row['Guitar_Img'] . '" alt="'  . '" style="width:70%">' .
 		            	
-		             		
+		             	//div right column	
 		             '</div>' .
 		             '<div class="right debug">' .
 				             //Art.nr
@@ -51,7 +54,7 @@ include 'header.php';
 				             //Info
 				             '<p>' . $row['Guitar_Info'] . '</p>' .
 				             //button
-				             '<a href="images/printscreencard.png">'. '<p>' . '<button class="cart_btn">'. 'Add to cart' . '</button>' . '</P>' .
+				             '<a href="images/printscreencard.png">'. '<p>' . '<button class="cart_btn debug">'. 'Add to cart' . '</button>' . '</P>' .
 				             '</a>' .
 		             '</div>' .
              '</div>';

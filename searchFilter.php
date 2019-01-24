@@ -1,7 +1,10 @@
+<?php
+include 'header.php';
+?>
 
 <?php
 
-    //Card.PHP
+    //searchFilter.php
     $searchValue = $_GET['svalue'];
 
     include "db_connection.php";        
@@ -16,21 +19,21 @@
         echo '<div class="card debug">' .
         //link naar guitars.php + foto
             
-             '<a href="guitars.php?Guitar_ID=' . $row['Guitar_ID'] . '">' .
-             '<img src="' . $row['Guitar_Img'] . '" alt="' . $row['Guitar_Brand'] . '" style="width: 100%">' .
-             '</a>' .
-             
-             '<h1>' . $row['Guitar_Brand']  . ' ' . $row['Guitar_Model'] .'</h1>' .
+              // '<a href="guitars.php?Guitar_ID=' . $row['Guitar_ID'] . '">' . '</a>' .
+            '<h1>' . $row['Guitar_Brand']  . ' ' . $row['Guitar_Model'] .'</h1>' .
              
              '<h2 class="price">' .'€'. $row['Guitar_Price'] .',-'.'</h2>'.
-           // '<a href="guitar_info.php?id=' . $row['Guitar_ID'] . '">' .
-            
-            '</a>'.
+             '<img src="' . $row['Guitar_Img'] . '" alt="' . $row['Guitar_Brand'] . '" style="width: 25%">' .
+             
+             // '</a>'.
             '</div>';
+            // '<a href="guitar_info.php?id=' . $row['Guitar_ID'] . '">' .
        
-    }       
+    }  
+
+     
  
-    $conn = null;
+        $conn = null;
   
 ?>
 

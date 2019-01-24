@@ -32,7 +32,13 @@ font-family: Trebuchet MS;
 font-size: 25px;
 background-color: #333;
 color:white;
+
 }
+
+div.nav ul li {
+
+}
+
 
 
 /* in card.php*/
@@ -57,7 +63,7 @@ div.card {
   text-align: center;
   color:white;
   background-color:#333 ;
- /* border: 1px solid red;*/
+ /*border: 1px solid red;*/
 
 }
 
@@ -103,6 +109,11 @@ div.header h1{
 font-family: Brush script MT;
 font-size: 35px;
 color:;
+
+}
+
+div.header h1:hover{
+
 }
 
 
@@ -119,7 +130,6 @@ ul li {
 	display: inline-block;
 	padding:10px;
 	justify-content: center;
-
 }
 
 /* box ul in nav */
@@ -127,8 +137,9 @@ ul{
 	margin:0;
 	padding:0;
 	color: white;
-	display: flex;
-	flex:1;
+	flex: 1;
+	justify-content: center;
+	align-items: center;
 
 
 }
@@ -136,6 +147,7 @@ ul{
 /* change color text in nav*/
 ul li a{
 	color: white;
+	padding: 3px;
 
 }
 
@@ -147,6 +159,10 @@ ul li:after {
 /*  will add "/"" to links in nav*/
 ul li.last:after {
     content:"";
+}
+
+li{
+	justify-content: center;
 }
 
 
@@ -207,8 +223,30 @@ text-align: center;
 
 }
 
+/*div searchbar in index.php*/
 div.searchbar{
-padding: auto;
+	display: flex;
+	justify-content: flex-end;
+	flex: 1;
+	flex-direction: row;
+}
+
+/**/
+.search_btn: hover{
+/*border: 1px solid red;*/
+background-color: red;
+
+}
+
+.input_field{
+border-radius:1px solid black;
+
+}
+
+.search_btn{
+
+	width: 10%;
+	font-size: 15px;
 }
 
 
