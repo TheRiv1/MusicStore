@@ -2,10 +2,11 @@
 <?php
 
     //Card.PHP
+    $searchValue = $_GET['svalue'];
 
     include "db_connection.php";        
 
-    $sql_querie = "SELECT Guitar_ID, Guitar_Articlenumber, Guitar_Brand, Guitar_Model, Guitar_Price, Guitar_Img, Guitar_Info FROM guitars";
+    $sql_querie = "SELECT Guitar_ID, Guitar_Articlenumber, Guitar_Brand, Guitar_Model, Guitar_Price, Guitar_Img, Guitar_Info FROM guitars WHERE Guitar_Brand LIKE '%".$searchValue."%'";
     
     $db_result = $conn->query($sql_querie);  
 

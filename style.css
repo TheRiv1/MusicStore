@@ -11,12 +11,12 @@ div.flex{
 }
 
 div.wrapper{
-	border: 2px solid black;
+	/*border: 2px solid black;*/
 }
 
 /* Header*/
 div.header{
-background-image: url(images/background.jpg);
+background-image: url(images/background2.jpg);
 background-image: cover;
 background-image: linear-gradient();
 color: white;
@@ -77,7 +77,12 @@ text-align:center;
 
 /* one picture only  */
 div.card_single.debug{
-border: 2px solid red;
+
+}
+
+#myInput{
+display:inline-block;
+
 }
 
 /*   create flex*/
@@ -85,6 +90,8 @@ div.card_single{
 	display: flex;
 	flex-direction: row;
 }
+
+
 
 /*  adjust text*/
 div.card_single p{
@@ -120,6 +127,8 @@ ul{
 	margin:0;
 	padding:0;
 	color: white;
+	display: flex;
+	flex:1;
 
 
 }
@@ -144,34 +153,44 @@ ul li.last:after {
 /* border on button */
 .cart_btn{
 
-border-radius: 20px black;
+background-color: grey;
+border-radius: 15px 50px;
 justify-content: center;
-margin-top: 200px;
+margin-top: 90px;
 width: 200px;
 height: 50px;
 }
 
 /* in guitars.php*/
-.price{
+.prices{
 	font-size: 20px;
 	color:black;
 	text-align: center;
 }
 
+/* in card.php*/
+.price{
+font-size:20px;
 
-/* column with picture */
+}
+
+
+/* column left with picture */
 div.left{
-border: 1px solid red;
+/*border: 1px solid red;*/
 width: 50%;
 height: 200vh;
 
 }
 
-/* column with text */
+/* column right with text */
 div.right{
-border: 1px solid red;
+/*border: 1px solid red;*/
+width: 50%;
 height: 200vh;
 background-color: lightgrey;
+background-image: url()
+
 }
 
 div.right p{
@@ -179,6 +198,7 @@ div.right p{
 	font-family: Arial;
 	font-size: 20px;
 	text-align: center;
+	padding: 30px;
 
 }
 
@@ -186,6 +206,12 @@ div.left h1{
 text-align: center;
 
 }
+
+div.searchbar{
+padding: auto;
+}
+
+
 
 
 

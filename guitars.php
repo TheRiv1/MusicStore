@@ -14,7 +14,7 @@ include 'header.php';
 <body>
 
 
-<div class="wrapper">
+<div class="wrapper debug">
 
 
 	<?php
@@ -38,7 +38,7 @@ include 'header.php';
 		             		'<h1>' . $row['Guitar_Brand']  . ' ' . $row['Guitar_Model'] .'</h1>' . 
 
 		             			 //Price
-		             		'<h2 class="price">' .'€'. $row['Guitar_Price'] .',-'.'</h2>'.  
+		             		'<h2 class="prices">' .'€'. $row['Guitar_Price'] .',-'.'</h2>'.  
 
 		             		//Img 
 		             		'<img src="' . $row['Guitar_Img'] . '" alt="'  . '" style="width:100%">' .
@@ -51,7 +51,7 @@ include 'header.php';
 				             //Info
 				             '<p>' . $row['Guitar_Info'] . '</p>' .
 				             //button
-				             '<a href="https://www.musicstore.de/nl_NL/EUR/cart">'. '<p>' . '<button class="cart_btn">'. 'Add to cart' . '</button>' . '</P>' .
+				             '<a href="images/printscreencard.png">'. '<p>' . '<button class="cart_btn">'. 'Add to cart' . '</button>' . '</P>' .
 				             '</a>' .
 		             '</div>' .
              '</div>';
