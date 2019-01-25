@@ -6,7 +6,7 @@
 	<title>Drums</title>
 </head>
 <body>
-	<img src="images/underconstruction.png" alt="" style="width: 50%">
+	<img clas="underc" src="images/underconstruction.png" alt="" style="width: 50%">
 	<a href="index.php"><h1>Under construction</h1></a>
 </body>
 </html>

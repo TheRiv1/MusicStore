@@ -23,9 +23,15 @@ include 'header.php';
 
 	//Guitars.php
 		include "db_connection.php";  
-		
-    $g_id = $_GET['Guitar_ID'];
-		      
+
+		 
+    
+		      if(isset($_GET['Guitar_ID'])){
+
+		      	$g_id = $_GET['Guitar_ID'];
+		      }else{
+		      	$g_id = 1;
+		      }
 
     $sql_querie = "SELECT Guitar_ID, Guitar_Articlenumber, Guitar_Brand, Guitar_Model, Guitar_Price, Guitar_Img , Guitar_Info FROM guitars WHERE Guitar_ID = '$g_id'";
     
