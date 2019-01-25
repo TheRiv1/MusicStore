@@ -13,6 +13,13 @@ include 'header.php';
     
     $db_result = $conn->query($sql_querie);  
 
+    if($db_result -> rowCount() == 0){
+        echo "<h1>No results</h1>";
+    }else{
+        echo "<h1>Guitar available</h1>";
+    }
+    
+
     foreach ($db_result as $row)
     {            
         
@@ -30,7 +37,7 @@ include 'header.php';
             // '<a href="guitar_info.php?id=' . $row['Guitar_ID'] . '">' .
        
     }  
-
+        
      
  
         $conn = null;

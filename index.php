@@ -4,10 +4,10 @@ include 'header.php';
 <!--    -->
 		<div class="nav debug">
 		<ul>
-			<li><a href="index.php">Guitars</a></li>
-			<li><a href="">Bass</a></li>
-			<li><a href="">Drums</a></li>
-			<li><a href="">Keys</a></li>
+			<li><a href="guitars.php">Guitars</a></li>
+			<li><a href="bass.php">Bass</a></li>
+			<li><a href="drums.php">Drums</a></li>
+			<li><a href="keys.php">Keys</a></li>
 		
 			<form  class="form_search debug" action="searchFilter.php"  method="GET">
 			<input class="input_field debug" name="svalue" type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for...">
