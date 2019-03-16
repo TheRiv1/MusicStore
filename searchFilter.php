@@ -30,7 +30,7 @@ include 'header.php';
             '<h1>' . $row['Guitar_Brand']  . ' ' . $row['Guitar_Model'] .'</h1>' .
              
              '<h2 class="price">' .'€'. $row['Guitar_Price'] .',-'.'</h2>'.
-             '<img src="' . $row['Guitar_Img'] . '" alt="' . $row['Guitar_Brand'] . '" style="width: 25%">' .
+             '<img src="' . $row['Guitar_Img'] . '" alt="' . $row['Guitar_Brand'] . '" style="width: 35%">' .
              
              // '</a>'.
             '</div>';

@@ -50,7 +50,7 @@ include 'header.php';
 		             		'<h2 class="prices">' .'€'. $row['Guitar_Price'] .',-'.'</h2>'.  
 
 		             		//Img 
-		             		'<img src="' . $row['Guitar_Img'] . '" alt="'  . '" style="width:70%">' .
+		             		'<img src="' . $row['Guitar_Img'] . '" alt="'  . '" style="width: 100%">' .
 		            	
 		             	//div right column	
 		             '</div>' .
